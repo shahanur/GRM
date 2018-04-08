@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using GRM.DataAccess.POCO;
 
-namespace GRM.Services
+namespace GRM.Services.Interfaces
 {
     public interface IMusicContractService
     {

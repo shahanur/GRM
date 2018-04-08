@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using GRM.DataAccess;
 using GRM.DataAccess.POCO;
 using GRM.Interfaces;
+using GRM.Services.Interfaces;
 
 namespace GRM.Services
 {
@@ -22,13 +24,37 @@ namespace GRM.Services
             var distributionPartnerContracts =
                 _distributionPartnerContractRepository.Find(dpc => dpc.Partner.ToLower().Equals(partner.ToLower()));
 
-            return distributionPartnerContracts.SelectMany(distributionPartnerContract =>
-                _musicContractRepository.Find(mc =>
+            var musicContracts = new List<MusicContract>();
+
+            foreach (var distributionPartnerContract in distributionPartnerContracts)
+            {
+                var contracts = _musicContractRepository.Find(mc =>
+                    EffectiveDateIsBiggerThanStartDate(effectiveDate, mc.StartDate) && EffectiveDateIsSmallerThanEndDate(effectiveDate, mc.EndDate) && mc.Usages.Contains(distributionPartnerContract.Usage));
+                musicContracts.AddRange(contracts.Select(contract => new MusicContract
                 {
-                    return mc.StartDate != null && ((DateTime.Compare(mc.StartDate.Value,effectiveDate) <= 0 ||
-                                                     (null != mc.EndDate && DateTime.Compare(mc.EndDate.Value,effectiveDate) >= 0)) &&
-                                                    mc.Usages.Contains(distributionPartnerContract.Usage));
-                })).ToList();
+                    Artist = contract.Artist,
+                    Title = contract.Title,
+                    StartDate = contract.StartDate,
+                    EndDate = contract.EndDate,
+                    Usages = new List<DistributionType> {distributionPartnerContract.Usage}
+                }));
+            }
+
+            return musicContracts;
+        }
+
+        private bool EffectiveDateIsSmallerThanEndDate(DateTime effectiveDate, DateTime? endDate)
+        {
+            if (null == endDate)
+                return true;
+            return DateTime.Compare(effectiveDate, endDate.Value) <= 0;
+        }
+
+        private bool EffectiveDateIsBiggerThanStartDate(DateTime effectiveDate,DateTime? startDate)
+        {
+            if (null == startDate)
+                return false;
+            return DateTime.Compare(effectiveDate, startDate.Value) >= 0;
         }
     }
 }

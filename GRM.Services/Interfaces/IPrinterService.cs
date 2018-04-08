@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace GRM.Services
+namespace GRM.Services.Interfaces
 {
     public interface IPrinterService<T>
     {
