@@ -8,6 +8,7 @@ namespace GRM.DataAccess.Repositories
 {
     public class MusicContractRepository<MusicContract>:IRepository<MusicContract>
     {
+        private const string MusiccontractTxt = "MusicContract.txt";
         private readonly IDataContext<MusicContract> _dataContext;
        
         public MusicContractRepository(IDataContext<MusicContract> dataContext)
@@ -17,7 +18,7 @@ namespace GRM.DataAccess.Repositories
 
         private IEnumerable<MusicContract> GetAll()
         {
-            return _dataContext.Read(Path.Combine(Environment.CurrentDirectory, "MusicContract.txt"));
+            return _dataContext.Read(Path.Combine(Environment.CurrentDirectory, MusiccontractTxt));
         }
 
         public IEnumerable<MusicContract> Find(Func<MusicContract, bool> predicate)

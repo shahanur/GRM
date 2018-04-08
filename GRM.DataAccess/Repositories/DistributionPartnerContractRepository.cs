@@ -8,6 +8,7 @@ namespace GRM.DataAccess.Repositories
 {
     public class DistributionPartnerContractRepository<DistributionPartnerContract> : IRepository<DistributionPartnerContract>
     {
+        private const string DistributionpartnercontractTxt = "DistributionPartnerContract.txt";
         private readonly IDataContext<DistributionPartnerContract> _dataContext;
         
         public DistributionPartnerContractRepository(IDataContext<DistributionPartnerContract> dataContext)
@@ -22,7 +23,7 @@ namespace GRM.DataAccess.Repositories
         
         private IEnumerable<DistributionPartnerContract> GetAll()
         {
-            return _dataContext.Read(Path.Combine(Environment.CurrentDirectory, "DistributionPartnerContract.txt"));
+            return _dataContext.Read(Path.Combine(Environment.CurrentDirectory, DistributionpartnercontractTxt));
         }
     }
 }
