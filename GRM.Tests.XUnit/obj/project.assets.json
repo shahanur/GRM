@@ -57,27 +57,6 @@
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/2.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
-        }
-      },
       "Microsoft.Extensions.DependencyModel/1.0.3": {
         "type": "package",
         "dependencies": {
@@ -1696,53 +1675,6 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
-      },
-      "GRM.DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "GRM.Interfaces": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/GRM.DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.DataAccess.dll": {}
-        }
-      },
-      "GRM.Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/GRM.Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.Interfaces.dll": {}
-        }
-      },
-      "GRM.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "GRM.DataAccess": "1.0.0",
-          "GRM.Util": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/GRM.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.Services.dll": {}
-        }
-      },
-      "GRM.Util/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/GRM.Util.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.Util.dll": {}
-        }
       }
     }
   },
@@ -1824,28 +1756,6 @@
         "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
         "microsoft.dotnet.platformabstractions.1.0.3.nupkg.sha512",
         "microsoft.dotnet.platformabstractions.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection/2.0.0": {
-      "sha512": "wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/2.0.0",
-      "files": [
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
-      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
-      "files": [
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyModel/1.0.3": {
@@ -5792,33 +5702,10 @@
         "xunit.runner.visualstudio.2.3.1.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
-    },
-    "GRM.DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../GRM.DataAccess/GRM.DataAccess.csproj",
-      "msbuildProject": "../GRM.DataAccess/GRM.DataAccess.csproj"
-    },
-    "GRM.Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../GRM.Interfaces/GRM.Interfaces.csproj",
-      "msbuildProject": "../GRM.Interfaces/GRM.Interfaces.csproj"
-    },
-    "GRM.Services/1.0.0": {
-      "type": "project",
-      "path": "../GRM.Services/GRM.Services.csproj",
-      "msbuildProject": "../GRM.Services/GRM.Services.csproj"
-    },
-    "GRM.Util/1.0.0": {
-      "type": "project",
-      "path": "../GRM.Util/GRM.Util.csproj",
-      "msbuildProject": "../GRM.Util/GRM.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "GRM.DataAccess >= 1.0.0",
-      "GRM.Services >= 1.0.0",
-      "Microsoft.Extensions.DependencyInjection >= 2.0.0",
       "Microsoft.NET.Test.Sdk >= 15.6.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "xunit >= 2.3.1",
@@ -5832,11 +5719,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projects\\GRM\\GRM.Tests\\GRM.Tests.csproj",
-      "projectName": "GRM.Tests",
-      "projectPath": "E:\\projects\\GRM\\GRM.Tests\\GRM.Tests.csproj",
+      "projectUniqueName": "E:\\projects\\GRM\\GRM.Tests.XUnit\\GRM.Tests.XUnit.csproj",
+      "projectName": "GRM.Tests.XUnit",
+      "projectPath": "E:\\projects\\GRM\\GRM.Tests.XUnit\\GRM.Tests.XUnit.csproj",
       "packagesPath": "C:\\Users\\Shahanur\\.nuget\\packages\\",
-      "outputPath": "E:\\projects\\GRM\\GRM.Tests\\obj\\",
+      "outputPath": "E:\\projects\\GRM\\GRM.Tests.XUnit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5854,14 +5741,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "E:\\projects\\GRM\\GRM.DataAccess\\GRM.DataAccess.csproj": {
-              "projectPath": "E:\\projects\\GRM\\GRM.DataAccess\\GRM.DataAccess.csproj"
-            },
-            "E:\\projects\\GRM\\GRM.Services\\GRM.Services.csproj": {
-              "projectPath": "E:\\projects\\GRM\\GRM.Services\\GRM.Services.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5873,15 +5753,12 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": {
-            "target": "Package",
-            "version": "[2.0.0, )"
-          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[15.6.0, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true

@@ -40,7 +40,7 @@ namespace GRM.Services
                 }));
             }
 
-            return musicContracts;
+            return musicContracts.OrderBy(mc=>mc.Artist);
         }
 
         private bool EffectiveDateIsSmallerThanEndDate(DateTime effectiveDate, DateTime? endDate)
