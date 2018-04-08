@@ -196,39 +196,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "GRM.DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "GRM.Interfaces": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/GRM.DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.DataAccess.dll": {}
-        }
-      },
-      "GRM.Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/GRM.Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.Interfaces.dll": {}
-        }
-      },
-      "GRM.Util/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "compile": {
-          "bin/placeholder/GRM.Util.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/GRM.Util.dll": {}
-        }
       }
     }
   },
@@ -689,27 +656,10 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "GRM.DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../GRM.DataAccess/GRM.DataAccess.csproj",
-      "msbuildProject": "../GRM.DataAccess/GRM.DataAccess.csproj"
-    },
-    "GRM.Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../GRM.Interfaces/GRM.Interfaces.csproj",
-      "msbuildProject": "../GRM.Interfaces/GRM.Interfaces.csproj"
-    },
-    "GRM.Util/1.0.0": {
-      "type": "project",
-      "path": "../GRM.Util/GRM.Util.csproj",
-      "msbuildProject": "../GRM.Util/GRM.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "GRM.DataAccess >= 1.0.0",
-      "GRM.Util >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -720,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projects\\GRM\\GRM.Services\\GRM.Services.csproj",
-      "projectName": "GRM.Services",
-      "projectPath": "E:\\projects\\GRM\\GRM.Services\\GRM.Services.csproj",
+      "projectUniqueName": "E:\\projects\\GRM\\GRM.Util\\GRM.Util.csproj",
+      "projectName": "GRM.Util",
+      "projectPath": "E:\\projects\\GRM\\GRM.Util\\GRM.Util.csproj",
       "packagesPath": "C:\\Users\\Shahanur\\.nuget\\packages\\",
-      "outputPath": "E:\\projects\\GRM\\GRM.Services\\obj\\",
+      "outputPath": "E:\\projects\\GRM\\GRM.Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -742,14 +692,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "E:\\projects\\GRM\\GRM.DataAccess\\GRM.DataAccess.csproj": {
-              "projectPath": "E:\\projects\\GRM\\GRM.DataAccess\\GRM.DataAccess.csproj"
-            },
-            "E:\\projects\\GRM\\GRM.Util\\GRM.Util.csproj": {
-              "projectPath": "E:\\projects\\GRM\\GRM.Util\\GRM.Util.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

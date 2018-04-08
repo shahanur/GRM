@@ -24,8 +24,11 @@ namespace GRM.Services
 
             return distributionPartnerContracts.SelectMany(distributionPartnerContract =>
                 _musicContractRepository.Find(mc =>
-                    (mc.StartDate >= effectiveDate || (null != mc.EndDate && mc.EndDate <= effectiveDate)) &&
-                    mc.Usages.Contains(distributionPartnerContract.Usage))).ToList();
+                {
+                    return mc.StartDate != null && ((DateTime.Compare(mc.StartDate.Value,effectiveDate) <= 0 ||
+                                                     (null != mc.EndDate && DateTime.Compare(mc.EndDate.Value,effectiveDate) >= 0)) &&
+                                                    mc.Usages.Contains(distributionPartnerContract.Usage));
+                })).ToList();
         }
     }
 }

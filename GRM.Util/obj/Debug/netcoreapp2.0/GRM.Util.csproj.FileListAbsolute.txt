@@ -1,0 +1,9 @@
+E:\projects\GRM\GRM.Util\bin\Debug\netcoreapp2.0\GRM.Util.deps.json
+E:\projects\GRM\GRM.Util\bin\Debug\netcoreapp2.0\GRM.Util.dll
+E:\projects\GRM\GRM.Util\bin\Debug\netcoreapp2.0\GRM.Util.pdb
+E:\projects\GRM\GRM.Util\obj\Debug\netcoreapp2.0\GRM.Util.csprojResolveAssemblyReference.cache
+E:\projects\GRM\GRM.Util\obj\Debug\netcoreapp2.0\GRM.Util.csproj.CoreCompileInputs.cache
+E:\projects\GRM\GRM.Util\obj\Debug\netcoreapp2.0\GRM.Util.AssemblyInfoInputs.cache
+E:\projects\GRM\GRM.Util\obj\Debug\netcoreapp2.0\GRM.Util.AssemblyInfo.cs
+E:\projects\GRM\GRM.Util\obj\Debug\netcoreapp2.0\GRM.Util.dll
+E:\projects\GRM\GRM.Util\obj\Debug\netcoreapp2.0\GRM.Util.pdb

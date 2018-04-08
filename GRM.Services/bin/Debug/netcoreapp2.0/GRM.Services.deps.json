@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.0": {
       "GRM.Services/1.0.0": {
         "dependencies": {
-          "GRM.DataAccess": "1.0.0"
+          "GRM.DataAccess": "1.0.0",
+          "GRM.Util": "1.0.0"
         },
         "runtime": {
           "GRM.Services.dll": {}
@@ -26,6 +27,11 @@
         "runtime": {
           "GRM.Interfaces.dll": {}
         }
+      },
+      "GRM.Util/1.0.0": {
+        "runtime": {
+          "GRM.Util.dll": {}
+        }
       }
     }
   },
@@ -41,6 +47,11 @@
       "sha512": ""
     },
     "GRM.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GRM.Util/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GRM.DataAccess\GRM.DataAccess.csproj" />
+    <ProjectReference Include="..\GRM.Util\GRM.Util.csproj" />
   </ItemGroup>
 
 </Project>

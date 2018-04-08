@@ -1,12 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using GRM.Util;
 
 namespace GRM.Services
 {
     public class ConsolePrinterService<T> : IPrinterService<T>
     {
+        private readonly IDictionary<string,string> _enumStringValues = new Dictionary<string, string>{{ "DigitalDownload", "digital download" },{ "Streaming", "streaming" } };
         public string Print(IEnumerable<T> results)
         {
             var output = new StringBuilder();
@@ -22,9 +26,14 @@ namespace GRM.Services
                         var enumValues = propertyInfo.GetValue(result) as IEnumerable;
                         var enumStrings = new List<string>();
                         if (enumValues != null)
-                            enumStrings.AddRange(from object enumValue in enumValues select enumValue.ToString());
+                            enumStrings.AddRange(enumValues.Cast<object>().Select(enumValue => _enumStringValues[enumValue.ToString()]));
 
                         values.Add(string.Join(",", enumStrings));
+                    }
+                    else if (propertyInfo.PropertyType == typeof(DateTime?))
+                    {
+                        var dateString = ((DateTime?)propertyInfo.GetValue(result)).GetOrdinalized();
+                        values.Add(dateString);
                     }
                     else
                     {

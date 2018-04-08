@@ -1,0 +1,9 @@
+E:\projects\GRM\GRM.Tests\bin\Debug\netcoreapp2.0\GRM.Tests.deps.json
+E:\projects\GRM\GRM.Tests\bin\Debug\netcoreapp2.0\GRM.Tests.dll
+E:\projects\GRM\GRM.Tests\bin\Debug\netcoreapp2.0\GRM.Tests.pdb
+E:\projects\GRM\GRM.Tests\obj\Debug\netcoreapp2.0\GRM.Tests.csprojResolveAssemblyReference.cache
+E:\projects\GRM\GRM.Tests\obj\Debug\netcoreapp2.0\GRM.Tests.csproj.CoreCompileInputs.cache
+E:\projects\GRM\GRM.Tests\obj\Debug\netcoreapp2.0\GRM.Tests.AssemblyInfoInputs.cache
+E:\projects\GRM\GRM.Tests\obj\Debug\netcoreapp2.0\GRM.Tests.AssemblyInfo.cs
+E:\projects\GRM\GRM.Tests\obj\Debug\netcoreapp2.0\GRM.Tests.dll
+E:\projects\GRM\GRM.Tests\obj\Debug\netcoreapp2.0\GRM.Tests.pdb

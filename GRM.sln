@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRM.Interfaces", "GRM.Inter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRM.DataAccess", "GRM.DataAccess\GRM.DataAccess.csproj", "{E4D40CF6-7455-4AC7-824D-36C15F2119A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRM.Services", "GRM.Services\GRM.Services.csproj", "{F55881C7-C673-4CD4-9316-0032B53E37CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GRM.Services", "GRM.Services\GRM.Services.csproj", "{F55881C7-C673-4CD4-9316-0032B53E37CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRM.Tests", "GRM.Tests\GRM.Tests.csproj", "{6AB60A30-BEB0-4E53-BCC6-2FFDE40B860A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GRM.Util", "GRM.Util\GRM.Util.csproj", "{0BDF8814-2A46-4A04-A010-AA1E121AE208}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{F55881C7-C673-4CD4-9316-0032B53E37CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F55881C7-C673-4CD4-9316-0032B53E37CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F55881C7-C673-4CD4-9316-0032B53E37CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB60A30-BEB0-4E53-BCC6-2FFDE40B860A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB60A30-BEB0-4E53-BCC6-2FFDE40B860A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB60A30-BEB0-4E53-BCC6-2FFDE40B860A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB60A30-BEB0-4E53-BCC6-2FFDE40B860A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDF8814-2A46-4A04-A010-AA1E121AE208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDF8814-2A46-4A04-A010-AA1E121AE208}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDF8814-2A46-4A04-A010-AA1E121AE208}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDF8814-2A46-4A04-A010-AA1E121AE208}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

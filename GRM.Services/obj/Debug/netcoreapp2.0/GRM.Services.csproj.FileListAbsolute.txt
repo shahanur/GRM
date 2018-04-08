@@ -12,3 +12,5 @@ E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.AssemblyInfo.c
 E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.csproj.CopyComplete
 E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.dll
 E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.pdb
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Util.dll
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Util.pdb
