@@ -3,3 +3,19 @@
 ################################################################################
 
 /.vs/GRM/v15
+/GRM.Console/bin/Debug/netcoreapp2.0
+/GRM.Console/obj
+/GRM.DataAccess/bin/Debug/netcoreapp2.0
+/GRM.DataAccess/obj/Debug/netcoreapp2.0/GRM.DataAccess.csprojResolveAssemblyReference.cache
+/GRM.DataAccess/obj/Debug/netcoreapp2.0/GRM.DataAccess.csproj.CoreCompileInputs.cache
+/GRM.DataAccess/obj/Debug/netcoreapp2.0/GRM.DataAccess.AssemblyInfoInputs.cache
+/GRM.DataAccess/obj/project.assets.json
+/GRM.DataAccess/obj/GRM.DataAccess.csproj.nuget.g.targets
+/GRM.DataAccess/obj/GRM.DataAccess.csproj.nuget.g.props
+/GRM.DataAccess/obj/GRM.DataAccess.csproj.nuget.cache
+/GRM.Interfaces/obj/project.assets.json
+/GRM.Interfaces/obj/GRM.Interfaces.csproj.nuget.g.targets
+/GRM.Interfaces/obj/GRM.Interfaces.csproj.nuget.g.props
+/GRM.Interfaces/obj/GRM.Interfaces.csproj.nuget.cache
+/GRM.Interfaces/obj/Debug/netcoreapp2.0/GRM.Interfaces.csproj.CoreCompileInputs.cache
+/GRM.Interfaces/obj/Debug/netcoreapp2.0/GRM.Interfaces.AssemblyInfoInputs.cache
