@@ -1,0 +1,9 @@
+E:\projects\GRM\GRM.Interfaces\bin\Debug\netcoreapp2.0\GRM.Interfaces.deps.json
+E:\projects\GRM\GRM.Interfaces\bin\Debug\netcoreapp2.0\GRM.Interfaces.dll
+E:\projects\GRM\GRM.Interfaces\bin\Debug\netcoreapp2.0\GRM.Interfaces.pdb
+E:\projects\GRM\GRM.Interfaces\obj\Debug\netcoreapp2.0\GRM.Interfaces.csprojResolveAssemblyReference.cache
+E:\projects\GRM\GRM.Interfaces\obj\Debug\netcoreapp2.0\GRM.Interfaces.csproj.CoreCompileInputs.cache
+E:\projects\GRM\GRM.Interfaces\obj\Debug\netcoreapp2.0\GRM.Interfaces.AssemblyInfoInputs.cache
+E:\projects\GRM\GRM.Interfaces\obj\Debug\netcoreapp2.0\GRM.Interfaces.AssemblyInfo.cs
+E:\projects\GRM\GRM.Interfaces\obj\Debug\netcoreapp2.0\GRM.Interfaces.dll
+E:\projects\GRM\GRM.Interfaces\obj\Debug\netcoreapp2.0\GRM.Interfaces.pdb

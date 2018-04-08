@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "GRM.Services/1.0.0": {
+        "dependencies": {
+          "GRM.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "GRM.Services.dll": {}
+        }
+      },
+      "GRM.DataAccess/1.0.0": {
+        "dependencies": {
+          "GRM.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "GRM.DataAccess.dll": {}
+        }
+      },
+      "GRM.Interfaces/1.0.0": {
+        "runtime": {
+          "GRM.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GRM.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GRM.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GRM.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.DataAccess.deps.json
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.DataAccess.dll
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.DataAccess.pdb
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.Interfaces.dll
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.Interfaces.pdb
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.csprojResolveAssemblyReference.cache
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.csproj.CoreCompileInputs.cache
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.AssemblyInfoInputs.cache
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.AssemblyInfo.cs
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.csproj.CopyComplete
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.dll
+E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.pdb

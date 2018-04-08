@@ -196,6 +196,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "GRM.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "GRM.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GRM.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GRM.DataAccess.dll": {}
+        }
+      },
+      "GRM.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/GRM.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GRM.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -656,10 +679,21 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "GRM.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../GRM.DataAccess/GRM.DataAccess.csproj",
+      "msbuildProject": "../GRM.DataAccess/GRM.DataAccess.csproj"
+    },
+    "GRM.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../GRM.Interfaces/GRM.Interfaces.csproj",
+      "msbuildProject": "../GRM.Interfaces/GRM.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "GRM.DataAccess >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -692,7 +726,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\projects\\GRM\\GRM.DataAccess\\GRM.DataAccess.csproj": {
+              "projectPath": "E:\\projects\\GRM\\GRM.DataAccess\\GRM.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

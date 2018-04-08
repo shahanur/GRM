@@ -8,21 +8,21 @@ namespace GRM.DataAccess.Repositories
 {
     public class DistributionPartnerContractRepository<DistributionPartnerContract> : IRepository<DistributionPartnerContract>
     {
-        private readonly IList<DistributionPartnerContract> _distributionPartnerContracts;
+        private readonly IDataContext<DistributionPartnerContract> _dataContext;
+        
         public DistributionPartnerContractRepository(IDataContext<DistributionPartnerContract> dataContext)
         {
-            _distributionPartnerContracts =
-                dataContext.Read(Path.Combine(Environment.CurrentDirectory, "DistributionPartnerContract.txt"));
+            _dataContext = dataContext;
         }
 
         public IEnumerable<DistributionPartnerContract> Find(Func<DistributionPartnerContract, bool> predicate)
         {
-            return _distributionPartnerContracts.Where(predicate);
+            return GetAll().Where(predicate);
         }
         
-        IEnumerable<DistributionPartnerContract> IRepository<DistributionPartnerContract>.GetAll()
+        private IEnumerable<DistributionPartnerContract> GetAll()
         {
-            return _distributionPartnerContracts;
+            return _dataContext.Read(Path.Combine(Environment.CurrentDirectory, "DistributionPartnerContract.txt"));
         }
     }
 }

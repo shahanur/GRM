@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\GRM.DataAccess\GRM.DataAccess.csproj" />
     <ProjectReference Include="..\GRM.Interfaces\GRM.Interfaces.csproj" />
+    <ProjectReference Include="..\GRM.Services\GRM.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

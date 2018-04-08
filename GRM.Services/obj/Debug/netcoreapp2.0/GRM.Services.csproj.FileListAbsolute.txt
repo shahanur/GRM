@@ -1,0 +1,14 @@
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Services.deps.json
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Services.dll
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Services.pdb
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.DataAccess.dll
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Interfaces.dll
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.DataAccess.pdb
+E:\projects\GRM\GRM.Services\bin\Debug\netcoreapp2.0\GRM.Interfaces.pdb
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.csprojResolveAssemblyReference.cache
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.csproj.CoreCompileInputs.cache
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.AssemblyInfoInputs.cache
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.AssemblyInfo.cs
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.csproj.CopyComplete
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.dll
+E:\projects\GRM\GRM.Services\obj\Debug\netcoreapp2.0\GRM.Services.pdb
