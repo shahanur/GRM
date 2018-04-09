@@ -1761,7 +1761,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "GRM.Interfaces": "1.0.0"
+          "GRM.Interfaces": "1.0.0",
+          "GRM.Util": "1.0.0"
         },
         "compile": {
           "bin/placeholder/GRM.DataAccess.dll": {}

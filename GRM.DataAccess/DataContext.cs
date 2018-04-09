@@ -5,6 +5,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using GRM.Interfaces;
+using GRM.Util;
 
 namespace GRM.DataAccess
 {
@@ -54,19 +55,7 @@ namespace GRM.DataAccess
                             }
                             else if (propertyInfo.PropertyType == typeof(DateTime?))
                             {
-                                var provider = CultureInfo.InvariantCulture;
-                                var format = "d MMM yyyy";
-                                if (string.IsNullOrWhiteSpace(propertyValues[propertyIndex]))
-                                    propertyInfo.SetValue(instance, null);
-                                else
-                                {
-                                    if (propertyValues[propertyIndex].Split(' ')[1].Length == 4)
-                                        format = "d MMMM yyyy";
-                                    propertyInfo.SetValue(instance,
-                                        DateTime.ParseExact(
-                                            propertyValues[propertyIndex].Replace("st", string.Empty),
-                                            format, provider));
-                                }
+                                propertyInfo.SetValue(instance,propertyValues[propertyIndex].GetDateTimeFromOrdinal());
                             }
                             else if (propertyInfo.PropertyType.IsEnum)
                             {

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GRM.Interfaces\GRM.Interfaces.csproj" />
+    <ProjectReference Include="..\GRM.Util\GRM.Util.csproj" />
   </ItemGroup>
 
 </Project>

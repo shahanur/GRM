@@ -10,3 +10,5 @@ E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.AssemblyIn
 E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.csproj.CopyComplete
 E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.dll
 E:\projects\GRM\GRM.DataAccess\obj\Debug\netcoreapp2.0\GRM.DataAccess.pdb
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.Util.dll
+E:\projects\GRM\GRM.DataAccess\bin\Debug\netcoreapp2.0\GRM.Util.pdb

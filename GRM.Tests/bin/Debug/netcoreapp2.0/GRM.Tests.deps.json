@@ -1086,7 +1086,8 @@
       },
       "GRM.DataAccess/1.0.0": {
         "dependencies": {
-          "GRM.Interfaces": "1.0.0"
+          "GRM.Interfaces": "1.0.0",
+          "GRM.Util": "1.0.0"
         },
         "runtime": {
           "GRM.DataAccess.dll": {}
