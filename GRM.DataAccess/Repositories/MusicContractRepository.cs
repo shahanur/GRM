@@ -23,6 +23,8 @@ namespace GRM.DataAccess.Repositories
 
         public IEnumerable<MusicContract> Find(Func<MusicContract, bool> predicate)
         {
+            if(null == predicate)
+                throw new ArgumentNullException();
             return GetAll().Where(predicate);
         }
     }

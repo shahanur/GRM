@@ -18,6 +18,8 @@ namespace GRM.DataAccess.Repositories
 
         public IEnumerable<DistributionPartnerContract> Find(Func<DistributionPartnerContract, bool> predicate)
         {
+            if(null == predicate)
+                throw new ArgumentNullException();
             return GetAll().Where(predicate);
         }
         
