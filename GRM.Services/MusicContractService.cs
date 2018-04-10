@@ -19,8 +19,12 @@ namespace GRM.Services
             _distributionPartnerContractRepository = distributionPartnerContractRepository;
         }
 
-        public IEnumerable<MusicContract> GetMusicContracts(string partner, DateTime effectiveDate)
+        public IEnumerable<MusicContract> GetMusicContracts(string partner, DateTime? effectiveDate)
         {
+            if (null == partner)
+                throw new ArgumentNullException();
+            if (null == effectiveDate)
+                throw new ArgumentNullException();
             var distributionPartnerContracts =
                 _distributionPartnerContractRepository.Find(dpc => dpc.Partner.ToLower().Equals(partner.ToLower()));
 
@@ -29,7 +33,7 @@ namespace GRM.Services
             foreach (var distributionPartnerContract in distributionPartnerContracts)
             {
                 var contracts = _musicContractRepository.Find(mc =>
-                    EffectiveDateIsBiggerThanStartDate(effectiveDate, mc.StartDate) && EffectiveDateIsSmallerThanEndDate(effectiveDate, mc.EndDate) && mc.Usages.Contains(distributionPartnerContract.Usage));
+                    EffectiveDateIsBiggerThanStartDate(effectiveDate.Value, mc.StartDate) && EffectiveDateIsSmallerThanEndDate(effectiveDate.Value, mc.EndDate) && mc.Usages.Contains(distributionPartnerContract.Usage));
                 musicContracts.AddRange(contracts.Select(contract => new MusicContract
                 {
                     Artist = contract.Artist,

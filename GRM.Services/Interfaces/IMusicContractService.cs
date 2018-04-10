@@ -6,6 +6,6 @@ namespace GRM.Services.Interfaces
 {
     public interface IMusicContractService
     {
-        IEnumerable<MusicContract> GetMusicContracts(string partner, DateTime effectiveDate);
+        IEnumerable<MusicContract> GetMusicContracts(string partner, DateTime? effectiveDate);
     }
 }
